@@ -1,0 +1,5 @@
+pytest==6.1.1
+Appium-Python-Client==1.0.2
+python-decouple==3.8
+allure-pytest==2.13.2
+urllib3==1.26.15  # this library version Fix for error 'ValueError: Timeout value connect was object object at 0x7efe5ad...'
