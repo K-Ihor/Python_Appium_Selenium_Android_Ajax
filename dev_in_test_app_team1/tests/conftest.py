@@ -20,7 +20,7 @@ def run_appium_server():
 
 
 @allure.step("Run driver and session")
-@pytest.fixture(scope='session')
+@pytest.fixture(scope='function')
 def driver(run_appium_server):
     driver = webdriver.Remote('http://localhost:4723/wd/hub', android_get_desired_capabilities())
     yield driver
